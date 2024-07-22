@@ -1,8 +1,9 @@
-$macroPath =  "$env:APPDATA\Microsoft\Excel\XLSTART"
-$savePath = $env:OneDrive+'\Documents\backup\office-configs\xl'
-$buItems = gci $macroPath
+$macroPath = "$env:APPDATA\Microsoft\Excel\XLSTART"
+$savePath  = $env:OneDrive+'\Documents\backup\office-configs\xl'
+$buItems   = gci $macroPath
+
 foreach ($item in $buItems){  
-    $item | Copy-Item -Destination "$savePath\backup.PERSONAL.XLSB"
+    $item | Copy-Item -Destination "$savePath\backup.PERSONAL.XLSB" -Verbose
 }
 
 
