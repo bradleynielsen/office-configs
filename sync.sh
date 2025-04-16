@@ -4,4 +4,4 @@ git add .
 git commit -m "sync script commit"
 git push
 
-read -p "Press enter to exit..."
+
