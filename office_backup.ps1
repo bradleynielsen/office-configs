@@ -1,5 +1,5 @@
 $macroPath = "$env:APPDATA\Microsoft\Excel\XLSTART"
-$savePath  = $env:OneDrive+'\Documents\backup\office-configs\xl'
+$savePath  = 'C:\Development_Solutions\backup\office-configs\xl'
 $buItems   = gci $macroPath
 
 foreach ($item in $buItems){  
