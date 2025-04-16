@@ -1,3 +1,10 @@
+$gitPath  = "C:\Program Files\Git\git-bash.exe"
+
+$rootpath   = $PSScriptRoot
+$syncScript = $rootpath+"\sync.sh"
+
+
+
 $macroPath = "$env:APPDATA\Microsoft\Excel\XLSTART"
 $savePath  = 'C:\Development_Solutions\backup\office-configs\xl'
 $buItems   = gci $macroPath
@@ -10,3 +17,8 @@ foreach ($item in $buItems){
 
 
 #$savePath = "c:"+$env:HOMEPATH+'\OneDrive - Serco\Documents\backup\office-configs\xl'
+
+cd $rootpath
+
+& $gitPath $syncScript
+
