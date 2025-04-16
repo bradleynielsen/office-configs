@@ -16,9 +16,19 @@ foreach ($item in $buItems){
 
 
 
+git status
+git add .
+git commit -m "sync script commit"
+git push
+
+
+
+<#
+
 #$savePath = "c:"+$env:HOMEPATH+'\OneDrive - Serco\Documents\backup\office-configs\xl'
 
 cd $rootpath
 
 & $gitPath $syncScript
 
+#>
